@@ -1,0 +1,9 @@
+@host=http://localhost:5295
+
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "michi.rieser@gmail.com",
+    "password": "myS3curePassw0rd!"
+}
