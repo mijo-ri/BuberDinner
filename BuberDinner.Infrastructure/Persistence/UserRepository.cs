@@ -1,6 +1,5 @@
-using BuberDinner.Application.Persistence;
+using BuberDinner.Application.Common.Interfaces.Persistence;
 using BuberDinner.Domain.Entities;
-using Microsoft.IdentityModel.Tokens;
 
 namespace BuberDinner.Infrastructure.Persistence;
 
