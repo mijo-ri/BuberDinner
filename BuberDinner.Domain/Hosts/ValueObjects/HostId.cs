@@ -2,13 +2,13 @@ using BuberDinner.Domain.Common.Models;
 
 namespace BuberDinner.Domain.Hosts.ValueObjects;
 
-public sealed class MenuReviewId : ValueObject
+public sealed class HostId : ValueObject
 {
     public Guid Value { get; }
 
-    private MenuReviewId(Guid value) => Value = value;
+    private HostId(Guid value) => Value = value;
 
-    public static MenuReviewId CreateUnique() => new(Guid.NewGuid());
+    public static HostId CreateUnique() => new(Guid.NewGuid());
 
     public override IEnumerable<object> GetEqualityComponents()
     {
